@@ -13,7 +13,7 @@ from config import *
 client = pymongo.MongoClient(MONGO_URL,connect=False) #生成一个对象
 db = client[MONGO_DB]
 
-# 该项目集合了索引页和详情页的结构，索引页内容通过AJAX加载，详情页的内容是JSON格式存储在主页面中
+# 该项目集合了索引页和详情页的结构，索引页内容通过AJAX加载， 详情页的内容是JSON格式存储在主页面中
 
 def get_page_index(offset,keyword): #需要把将来改变的转化成变量
     global response
